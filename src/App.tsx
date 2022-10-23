@@ -3,10 +3,16 @@ import { useState } from 'react';
 function App() {
 
 	return (
-		<div className='flex justify-center items-center h-full'>
-			<h1>
+		<div className='flex flex-col justify-between h-screen bg-spotify-green'>
+			<header>
+				Header
+			</header>
+			<main>
 				Spotify
-			</h1>
+			</main>
+			<footer>
+				Footer
+			</footer>
 		</div>
 	)
 }
