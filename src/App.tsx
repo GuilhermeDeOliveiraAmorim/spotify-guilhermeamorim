@@ -1,3 +1,5 @@
+import { MdAudiotrack } from "react-icons/md";
+
 function App() {
 
 	return (
@@ -16,10 +18,20 @@ function App() {
 			<main className='h-screen flex justify-between p-4 gap-4'>
 				<div id="day" className="flex-1 flex flex-col justify-between w-full bg-background-highlight rounded-xl p-2">
 					<div id="head-list-day" className="flex gap-6">
-						<img src="https://i.scdn.co/image/ab67706c0000bebb667524ffe97221bd9dd9cb5b" className="h-32" />
-						<h2 className="text-text-base">
-							day
-						</h2>
+						<img src="https://i.scdn.co/image/ab67706c0000bebb667524ffe97221bd9dd9cb5b" className="h-32 rounded-lg" />
+						<div className="flex justify-between flex-col w-full">
+							<h2 className="text-text-base text-3xl">
+								Ranking do dia
+							</h2>
+							<div className="flex justify-between">
+								<span className="text-text-base">
+									23/10/2022
+								</span>
+								<span className="text-text-base">
+									Played: 13
+								</span>
+							</div>
+						</div>
 					</div>
 					<hr className="text-text-subdued text-sm" />
 					<div id="list-week" className="gap-2">
@@ -41,9 +53,9 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 							<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 								<span className="text-text-subdued">2</span>
@@ -62,9 +74,9 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 							<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 								<span className="text-text-subdued">3</span>
@@ -83,9 +95,9 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 							<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 								<span className="text-text-subdued">4</span>
@@ -104,9 +116,9 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 							<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 								<span className="text-text-subdued">5</span>
@@ -125,14 +137,14 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 						</ul>
 					</div>
 					<div id="show-more-day">
-						<button className="bg-spotify-green rounded-bl-lg rounded-br-lg w-full p-2">
+						<button className="bg-spotify-green hover:bg-spotify-green-bright rounded-bl-lg rounded-br-lg w-full p-2">
 							Ver mais
 						</button>
 					</div>
@@ -142,8 +154,8 @@ function App() {
 						<div className="flex gap-6">
 							<img src="https://i.scdn.co/image/ab67706c0000bebb667524ffe97221bd9dd9cb5b" className="h-32 rounded-lg" />
 							<div>
-								<h2 className="text-text-base">
-									week
+								<h2 className="text-text-base text-3xl">
+									Ranking da Semana
 								</h2>
 								<h2 className="text-text-base">
 									week
@@ -170,9 +182,9 @@ function App() {
 									<span className="flex-1 text-text-base text-center">
 										04:23
 									</span>
-									<span className="text-text-base text-right">
-										...
-									</span>
+									<button className="text-text-base text-right">
+										<MdAudiotrack />
+									</button>
 								</li>
 								<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 									<span className="text-text-subdued">2</span>
@@ -191,9 +203,9 @@ function App() {
 									<span className="flex-1 text-text-base text-center">
 										04:23
 									</span>
-									<span className="text-text-base text-right">
-										...
-									</span>
+									<button className="text-text-base text-right">
+										<MdAudiotrack />
+									</button>
 								</li>
 								<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 									<span className="text-text-subdued">3</span>
@@ -212,9 +224,9 @@ function App() {
 									<span className="flex-1 text-text-base text-center">
 										04:23
 									</span>
-									<span className="text-text-base text-right">
-										...
-									</span>
+									<button className="text-text-base text-right">
+										<MdAudiotrack />
+									</button>
 								</li>
 								<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 									<span className="text-text-subdued">4</span>
@@ -233,9 +245,9 @@ function App() {
 									<span className="flex-1 text-text-base text-center">
 										04:23
 									</span>
-									<span className="text-text-base text-right">
-										...
-									</span>
+									<button className="text-text-base text-right">
+										<MdAudiotrack />
+									</button>
 								</li>
 								<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 									<span className="text-text-subdued">5</span>
@@ -254,24 +266,24 @@ function App() {
 									<span className="flex-1 text-text-base text-center">
 										04:23
 									</span>
-									<span className="text-text-base text-right">
-										...
-									</span>
+									<button className="text-text-base text-right">
+										<MdAudiotrack />
+									</button>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div id="show-more-week">
-						<button className="bg-spotify-green rounded-bl-lg rounded-br-lg w-full p-2">
+						<button className="bg-spotify-green hover:bg-spotify-green-bright rounded-bl-lg rounded-br-lg w-full p-2">
 							Ver mais
 						</button>
 					</div>
 				</div>
 				<div id="month" className="flex-1 flex flex-col justify-between w-full bg-background-highlight rounded-xl p-2">
 					<div id="head-list-month" className="flex gap-6">
-						<img src="https://i.scdn.co/image/ab67706c0000bebb667524ffe97221bd9dd9cb5b" className="h-32" />
-						<h2 className="text-text-base">
-							month
+						<img src="https://i.scdn.co/image/ab67706c0000bebb667524ffe97221bd9dd9cb5b" className="h-32 rounded-lg" />
+						<h2 className="text-text-base text-3xl">
+							Ranking do Mês
 						</h2>
 					</div>
 					<hr className="text-text-subdued text-sm" />
@@ -294,9 +306,9 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 							<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 								<span className="text-text-subdued">2</span>
@@ -315,9 +327,9 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 							<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 								<span className="text-text-subdued">3</span>
@@ -336,9 +348,9 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 							<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 								<span className="text-text-subdued">4</span>
@@ -357,9 +369,9 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 							<li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
 								<span className="text-text-subdued">5</span>
@@ -378,14 +390,14 @@ function App() {
 								<span className="flex-1 text-text-base text-center">
 									04:23
 								</span>
-								<span className="text-text-base text-right">
-									...
-								</span>
+								<button className="text-text-base text-right">
+									<MdAudiotrack />
+								</button>
 							</li>
 						</ul>
 					</div>
 					<div id="show-more-month">
-						<button className="bg-spotify-green rounded-bl-lg rounded-br-lg w-full p-2">
+						<button className="bg-spotify-green hover:bg-spotify-green-bright rounded-bl-lg rounded-br-lg w-full p-2">
 							Ver mais
 						</button>
 					</div>

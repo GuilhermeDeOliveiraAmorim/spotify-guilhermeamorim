@@ -11,6 +11,7 @@ module.exports = {
         },
         colors: {
             "spotify-green": "#1ed760",
+            "spotify-green-bright": "#23fa70",
             "background-base": "#121212",
             "background-highlight": "#1a1a1a",
             "background-press": "#000",
