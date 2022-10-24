@@ -2,7 +2,7 @@ import { Ranking } from "../ranking";
 
 function Main() {
   return (
-    <main className="h-screen flex justify-between p-4 gap-4">
+    <main className="flex flex-col sm:flex-row lg:flex-row sm:h-screen lg:h-screen justify-between p-2 gap-2 sm:p-4 sm:gap-4 lg:p-4 lg:gap-4">
       <Ranking
         period="day"
         head={{

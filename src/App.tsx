@@ -5,7 +5,7 @@ import { Page } from "./components/page";
 
 function App() {
   return (
-    <div className="flex flex-col justify-between h-screen bg-spotify-green overflow-auto">
+    <div className="flex flex-col h-screen bg-spotify-green overflow-auto">
       <Header />
       <Main />
       {/* <Page pageTitle="Day" />
