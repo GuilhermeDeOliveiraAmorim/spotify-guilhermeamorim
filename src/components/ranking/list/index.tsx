@@ -1,6 +1,6 @@
-import React from "react";
 import { MdAudiotrack } from "react-icons/md";
 import { IList } from "./IList";
+import { Item } from "./item";
 
 function List(props: IList) {
 
@@ -9,27 +9,15 @@ function List(props: IList) {
     return (
         <div id={`list-${period}`} className="gap-2">
             <ul className="gap-2">
-                <li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
-                    <span className="text-text-subdued">1</span>
-                    <img src="https://i.scdn.co/image/ab67616d00004851b7f847187cfc3e5050420278" className="rounded-lg" />
-                    <div className="flex flex-1 flex-col justify-between h-full">
-                        <span className="text-text-base">
-                            Ontem ao Luar
-                        </span>
-                        <span className="text-text-subdued">
-                            Rubel
-                        </span>
-                    </div>
-                    <span className="flex-1 text-text-base text-right">
-                        Ontem ao Luar
-                    </span>
-                    <span className="flex-1 text-text-base text-center">
-                        04:23
-                    </span>
-                    <button className="text-text-base text-right">
-                        <MdAudiotrack />
-                    </button>
-                </li>
+                <Item
+                    ranking={1}
+                    title={"Ontem ao Luar"}
+                    artist={"Rubel"}
+                    album={"Ontem ao Luar"}
+                    time={"04:23"}
+                    itemImgUrl={"https://i.scdn.co/image/ab67616d00004851b7f847187cfc3e5050420278"}
+                    spotifyUrl={""}
+                />
                 <li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
                     <span className="text-text-subdued">2</span>
                     <img src="https://i.scdn.co/image/ab67616d00004851eabb288490733f35809d5a3e" className="rounded-lg" />
