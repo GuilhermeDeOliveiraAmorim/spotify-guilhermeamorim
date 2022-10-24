@@ -4,8 +4,6 @@ import { IItem } from "./IItem";
 function Item(props: IItem) {
   const { artist, title, album, itemImgUrl, ranking, time, spotifyUrl } = props;
 
-  var a = "https://i.scdn.co/image/ab67616d00004851b7f847187cfc3e5050420278";
-
   return (
     <li className="flex items-center w-full hover:bg-background-tinted-base p-2 gap-2 rounded-lg">
       <span className="text-text-subdued">{ranking}</span>
